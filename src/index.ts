@@ -17,12 +17,13 @@ export class CryptoBot {
 
 	private async request<T>(method: string, body?: unknown): Promise<T> {
 		return fetch(`${this.apiUrl}/api/${method}`, {
+			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
 				"Crypto-Pay-API-Token": this.apiToken,
 			},
 			body: JSON.stringify(body),
-		}) as Promise<T>;
+		}).then((res) => res.json()) as Promise<T>;
 	}
 
 	public async getMe() {

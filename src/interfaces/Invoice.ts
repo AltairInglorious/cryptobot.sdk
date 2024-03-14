@@ -1,16 +1,17 @@
+type CryptoAsset = "USDT"
+| "TON"
+| "BTC"
+| "ETH"
+| "LTC"
+| "BNB"
+| "TRX"
+| "USDC"
+| "JET";
+
 export type Invoice = {
 	invoice_id: number;
 	currency_type: "crypto" | "fiat";
-	asset?:
-		| "USDT"
-		| "TON"
-		| "BTC"
-		| "ETH"
-		| "LTC"
-		| "BNB"
-		| "TRX"
-		| "USDC"
-		| "JET";
+	asset?: CryptoAsset;
 	fiat?:
 		| "USD"
 		| "EUR"
@@ -36,16 +37,7 @@ export type Invoice = {
 	paid_asset?: string;
 	paid_amount?: string;
 	paid_fiat_rate?: string;
-	accepted_assets?:
-		| "USDT"
-		| "TON"
-		| "BTC"
-		| "ETH"
-		| "LTC"
-		| "BNB"
-		| "TRX"
-		| "USDC"
-		| "JET";
+	accepted_assets?: CryptoAsset[];
 	fee_asset?: string;
 	fee_amount?: number;
 	fee?: string; // deprecated
