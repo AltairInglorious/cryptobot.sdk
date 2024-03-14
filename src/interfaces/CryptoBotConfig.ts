@@ -1,4 +1,4 @@
 export type CryptoBotConfig = {
-    apiToken: string;
-    apiUrl?: string;
-}
+	apiToken: string;
+	apiUrl?: string;
+};

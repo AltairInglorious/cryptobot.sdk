@@ -1,5 +1,5 @@
 {
-  "name": "cryptobot.sdk",
+  "name": "at.cryptobot.sdk",
   "version": "1.0.0",
   "description": "A SDK for telegram @cryptobot API",
   "author": "amadeustech.dev",
@@ -9,6 +9,10 @@
   "files": [
     "/dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AltairInglorious/cryptobot.sdk"
+  },
   "scripts": {
     "biome:format": "bunx @biomejs/biome format ./src --write",
     "biome:lint": "bunx @biomejs/biome lint ./src",
