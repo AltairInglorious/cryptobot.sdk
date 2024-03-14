@@ -9,6 +9,12 @@
   "files": [
     "/dist"
   ],
+  "keywords": [
+    "cryptobot",
+    "telegram",
+    "typescript",
+    "sdk"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/AltairInglorious/cryptobot.sdk"
