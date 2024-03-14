@@ -1,0 +1,22 @@
+{
+  "name": "cryptobot.sdk",
+  "version": "1.0.0",
+  "description": "A SDK for telegram @cryptobot API",
+  "author": "amadeustech.dev",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "biome:format": "bunx @biomejs/biome format ./src --write",
+    "biome:lint": "bunx @biomejs/biome lint ./src",
+    "biome:check": "bunx @biomejs/biome check --apply ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
