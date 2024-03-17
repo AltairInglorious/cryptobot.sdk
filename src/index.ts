@@ -23,7 +23,14 @@ export class CryptoBot {
 				"Crypto-Pay-API-Token": this.apiToken,
 			},
 			body: JSON.stringify(body),
-		}).then((res) => res.json()) as Promise<T>;
+		})
+			.then((res) => res.json())
+			.then((res) => {
+				if (!res.ok) {
+					throw new Error(res.error);
+				}
+				return res.result;
+			}) as Promise<T>;
 	}
 
 	public async getMe() {
