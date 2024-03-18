@@ -64,3 +64,11 @@ app.post(`/webhook/cryptobot/${process.env.CRYPTOBOT_TOKEN}`, async (req: Reques
 
 app.listen(3000);
 ```
+
+# Contributing
+
+All contributions are welcome!
+
+# Communication
+
+You can mail me on altairinglorious@proton.me
