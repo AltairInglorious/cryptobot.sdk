@@ -44,7 +44,7 @@ export class CryptoBot {
 	public checkSignature({
 		body,
 		headers,
-	}: { body: string; headers: { "crypto-pay-api-signature": string } }) {
+	}: { body: string; headers: Record<string, string> }) {
 		const secret = createHash("sha256").update(this.apiToken).digest();
 		const checkString = JSON.stringify(body);
 		const hmac = createHmac("sha256", secret).update(checkString).digest("hex");
